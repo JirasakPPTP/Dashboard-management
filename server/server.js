@@ -15,7 +15,7 @@ connectDB();
 
 const app = express();
 
-const defaultOrigins = ["http://localhost:5173", "http://localhost:5174"];
+const defaultOrigins = ["https://dashboard-management-ochre.vercel.app"];
 const configuredOrigins = (process.env.CLIENT_URLS || process.env.CLIENT_URL || "")
   .split(",")
   .map((v) => v.trim())

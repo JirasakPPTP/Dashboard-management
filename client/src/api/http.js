@@ -2,7 +2,7 @@
 import { getStoredToken } from "../utils/storage";
 
 const http = axios.create({
-  baseURL: import.meta.env.VITE_API_URL || "http://localhost:5000/api"
+  baseURL: import.meta.env.VITE_API_URL || "https://dashboard-management-z1lb.onrender.com/api"
 });
 
 http.interceptors.request.use((config) => {
